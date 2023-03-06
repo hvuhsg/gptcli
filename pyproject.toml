@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "openapicli"
+name = "pygptcli"
 version = "0.1.0"
 description = "GPT3 CLI tool"
 authors = ["yoyo <hvuhsg5@gmail.com>"]
