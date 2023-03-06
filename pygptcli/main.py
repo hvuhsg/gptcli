@@ -15,6 +15,10 @@ db_file = shelve.open(db_filepath, writeback=True)
 
 
 def main():
+    if len(sys.argv) == 1:
+        print("Get help with the --help or -h flags.")
+        exit(1)
+
     if sys.argv[1] in ["--help", "-h"]:
         help_message()
         return
@@ -60,10 +64,7 @@ def request():
             continue
 
         answer += text
-
-        if text == "\n":
-            text = "\t\t\n"
-
+        text = text.replace("\n", "\n\t\t")
         print(text, end="")
 
     print(Style.DIM + '\n\n' + '-'*10, "DONE", '-'*10 + Style.RESET_ALL)
