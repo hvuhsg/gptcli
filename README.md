@@ -1,6 +1,8 @@
 # gptcli
 Use OpenAI GPT from your terminal
 
+[![Bring Them Home](https://badge.yehoyada.com)](https://www.standwithus.com/)  
+
 ## Install
 ```commandline
 pip install pygptcli
